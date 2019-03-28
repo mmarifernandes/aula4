@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda|Pacifico|Ribeye');
+
+h1{
+    font-size: 35pt;
+    text-align: center;
+    font-family: "Open Sans",Arial, Tahoma, sans-serif;
+    font-family: 'Ribeye',
+    cursive;
+    font-weight: lighter;
+}
+
+h1:hover{
+    color: pink;
+    text-transform: uppercase;
+
+}
+h2{
+    font-size: 30pt;
+    font-family: cursive;
+    font-weight: lighter; /*peso da fonte*/ 
+}
+h3{
+    font-size: 25pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(139, 55, 55);
+    /*desloc x desloc y desfoque*/
+    text-shadow: 5px 5px 10px grey;
+}
+
+p#primeiro{
+    font-family: "Times New Roman", serif;
+    font-style: italic;
+}
+
+p:nth-of-type(2){ /*o 2nd p*/
+    color: darkred;
+    text-align: justify;
+}
+
+span.sublinhado{ /*spans com a class sublinhado*/
+    text-decoration: underline;
+}
+
+a{ /*tirar o sublinhado do link*/
+    text-decoration: none;
+}
+
+p:last-of-type{
+    line-height: 20pt;
+}

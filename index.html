@@ -5,29 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Links</h1>
+   <h1>Título de Documento</h1>
+   <h2>Subtítulo</h2>
+   <h3>Terceiro Nível</h3>
 
-    <a href="livros/index.html">Livros</a> <br>
+   <a href="#">Link para lugar nenhum</a>
 
-    <a href="https://www.youtube.com/watch?v=2IG1OfoFZYE">Youtube</a> <br>
-    <!-- target="_blank faz o link abrie em uma nova -->
-    <a href="https://www.google.com/search?ei=0tiTXMy7NvK_5OUP3PO8mAw&q=do+a+barrel+roll&oq=do+a+b%5Crel+roll&gs_l=psy-ab.12...0.0..3816...0.0..0.0.0.......0......gws-wiz.9rf0qNbokwE" target=""_blank> O que é link?</a> <br>
-    <a href="mailto:marinafernandess103@gmail.com">
-            marinafernandess103@gmail.com
-    </a> <br>
-    <p>  
-        Me liga ;)
-    <a href="tel:999695837">999695837
-      
-    </a>
-</p> 
-    <p>
-        Veja as 
-        <a href="disciplinas.html">
-                disciplinas</a>
-        
-    </p>
+
+   <p id="primeiro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, sapiente quod! Dolorem ex quibusdam ducimus debitis ab neque a dolores quos asperiores. Labore magni quas, harum aperiam atque nam voluptate!</p>
+   <p>Sapiente et impedit doloribus molestias velit commodi architecto, debitis <span class="sublinhado">speriores voluptas</span> aeveniet beatae, ipsum accusamus, dolor maxime corrupti vero dolorem aliquid quia ex a deserunt! Provident facere enim quis quos.</p>
+   <p>Ea dolorum pariatur aliquam dolores. Soluta dignissimos nihil, natus asperiores expedita quas, tempore assumenda voluptatum ipsam sit veritatis vero culpa alias ipsum. Ut minima magnam unde. Dolorum iste numquam velit!</p>
+
+
+
+
+<script>
+    function trimLeft() {
+        console.log(this);
+
+        let r = '';
+        let copy = false;
+        for (let i = 0; i < this.txt.length; i++) {
+            if (copy || this.txt[i] != ' ') {
+                copy = true;
+                r += this.txt.charAt(i);
+            }
+        }
+
+        return r;
+    }
+        const o={
+            nome:'teste',
+            txt:'   um texto ',
+            tleft: trimLeft
+        };
+        //chamando a função trimLeft
+        //no contexto de o (o será this)
+        console.log(trimLeft.call(o));
+        //o this é o objeto
+</script>
+
+
 </body>
 </html>
